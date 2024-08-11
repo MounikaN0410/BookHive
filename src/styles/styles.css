@@ -1,0 +1,332 @@
+
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700,600|Open+Sans:400|Poppins:500,800");
+
+
+
+:root {
+    --black: #000000;
+    --main-color:#e4c5ff;
+    --lighter-black: #454545;
+    --white: #ffffff;
+    --light-grey:	#606060;
+    --success-green: green;
+    --red: #a61e20;
+  
+    --font-size-xs: 18px;
+    --font-size-s: 20px;
+    --font-size-m: 28px;
+    --font-size-l: 34px;
+    --font-size-xl: 38px;
+    --font-size-xxl: 50px;
+  
+    --font-family-poppins:"Poppins";
+    --font-family-nunito: "Nunito", Helvetica;
+    --font-family-open_sans: "Open Sans", Helvetica;
+  }
+  .m-text-black {
+    font-size: var(--font-size-m);
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+  }
+  
+  .s-text-black {
+    font-size: var(--font-size-s);
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+  }
+  .l-text-black {
+    font-size: var(--font-size-l);
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+  }
+  .s-text-black-semibold{
+    color:var(--black);
+    font-size: var(--font-size-s);
+    font-weight: 350;
+    font-family: var(--font-family-poppins);
+
+  }
+  .xs-text-black-semibold {
+    font-size: var(--font-size-xs);
+    color: var(--black);
+    font-weight: 500;
+    font-family: var(--font-family-poppins);
+  }
+  .xs-text-lighter-black-normal {
+    font-size: var(--font-size-xs);
+    color: var(--lighter-black);
+    font-family: var(--font-family-open_sans);
+  }
+
+  .s-text-lighter-black-normal {
+    font-size: var(--font-size-s);
+    color: var(--lighter-black);
+    font-family: var(--font-family-open_sans);
+  }
+  .xs-text-lighter-black-underlined {
+    font-size: var(--font-size-xs);
+    color: var(--lighter-black);
+    text-decoration: underline;
+    font-family: var(--font-family-poppins);
+  }
+  .xs-poppins-text{
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xs);
+
+  }
+  .s-text-grey {
+    font-size: var(--font-size-s);
+    color: var(--light-grey);
+    font-family: var(--font-family-poppins);
+  }
+
+  .m-text-grey {
+    font-size: var(--font-size-l);
+    color: var(--light-grey);
+    font-family: var(--font-family-poppins);
+  }
+
+  .wrapper{
+    display:flex;
+    align-items:center;
+
+    /* position:relative; */
+  }
+  
+  .book-card {
+    height: 354px;
+    width: 265px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border:4px solid #d9d9d9;
+    border-radius:5px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .book-card-img {
+    
+    justify-content: center;
+    position: relative;
+    width: 60%;
+    height: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    object-fit:contain;
+    
+  }
+  .book-card-img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow:hidden;
+
+
+  }
+  
+  .add-btn {
+    background-color: rgb(0, 128, 0);
+    min-height: 30px;
+    min-width: 125px;
+    width:fit-content !important;
+    padding:7px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: var(--font-family-poppins);
+  }
+
+  
+  .box{
+    display:flex;
+    position:relative;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    height:80%;
+    width:auto;
+    max-width: 1000px;
+    padding:5px;
+
+  }
+  a{
+    
+    color:var(--success-green);
+    font-size:(--font-size-s);
+    font-family: var(--font-family-poppins);
+
+  }
+  .custom-warning{
+    height:auto;
+    width:auto;
+    border:2px solid var(--red);
+
+  }
+  .lgn-sgn{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--main-color);
+    gap:20px;
+  }
+  .lgn-sgn-main-box{
+   
+    height:85vh;
+    width:85vw;
+    display:flex;
+    border:7px solid var(--main-color);
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    
+  }
+  
+  .lgn-sgn-main-box img{
+   
+    height:100vh;
+    width:100vw;
+    object-fit:contain;
+    
+  }
+
+  @media screen and (max-height:730px){
+    .lgn-sgn-main-box{
+      height:100vh;
+      width:100vw;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .lgn-sgn-main-box {
+      height:90vh;
+      
+    }
+    
+  }
+  @media screen and (max-width: 600px) {
+    .lgn-sgn-main-box {
+      height:90vh;
+      flex-direction:column;
+    }
+    .lgn-sgn-main-box img{
+      height:15vh;
+      width:100%;
+      object-fit:contain;
+    }
+  }
+
+
+  /* InputPass component */
+  .pass-input{
+    position:relative;
+  }
+  .icon{
+    position:absolute;
+    right:10px;
+    top:10px;
+  }
+
+
+
+  .book-now{
+    display:flex;
+    height:100vh;
+    width:100vw;
+    
+    
+  }
+  .book-now-data{
+    flex:50%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    
+   
+  }
+  .book-now-image-container{
+    height:90%;
+    width:90%;
+    position:relative;
+    margin-top: 25px;
+  }
+  .book-now-image-container img{
+    height: 50%;
+    width: 40%;
+    margin:40px;
+    padding-top:20px;
+   
+    
+  }
+  .book-now-calendar{
+    padding:20px;
+    flex:50%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+
+  }
+  /* Calendar */
+  .calendar{
+    width:100%;
+  }
+
+
+
+.home{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+
+}
+.home-books{
+  display:flex;
+  flex-wrap: wrap!important;
+  gap:20px;
+  align-items: center;
+  justify-content: center;
+}
+.home-books-grid{
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  gap:20px;
+}
+
+.home-pagination{
+  display:flex;
+  justify-content: center;
+
+}
+.pagination button{
+  border-radius: 50%;
+  padding:10px;
+  cursor: pointer;
+  margin:5px;
+}
+.pagination button:hover{
+  
+  transform: scale(1, 1.09);
+  
+}
+.pagination .active{
+  background-color: var(--success-green);
+  color:var(--white);
+}
+
+.center-text{text-align: center;}
+
+
+
+
+
+
+
+  
+  
